@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore Sri Lanka - Plan your dream tropical vacation in the paradise island of Sri Lanka. Discover beaches, culture, and wildlife." />
+    <title>Explore Sri Lanka - Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Explore Sri Lanka</h1>
+      <div class="header-actions">
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav id="nav-menu">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="travel-tips.html">Travel Tips</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h3 class="hero-subtitle">Tropical Paradise Island</h3>
+      <h2>Welcome to Sri Lanka</h2>
+      <p>Discover pristine golden beaches, mist-shrouded mountains, ancient culture, and raw wildlife adventures.</p>
+      <a href="#experiences" class="hero-scroll-btn" aria-label="Scroll down to experiences">↓</a>
+    </section>
+
+    <!-- Interactive Experiences Section -->
+    <section id="experiences" class="main-content">
+      <h2 class="section-title">Amazing Experiences</h2>
+      <div class="exp-grid">
+        <div class="exp-card">
+          <img src="images/waterfall.jpeg" alt="Scenic mountains in Sri Lanka" class="exp-img" />
+          <div class="exp-overlay">
+            <h3>Nature & Hills</h3>
+            <p>Trek through mist-covered tea plantations, cascading waterfalls, and spectacular mountain viewpoints in Ella.</p>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img src="images/kandy.jpeg" alt="Temple of the Sacred Tooth Relic" class="exp-img" />
+          <div class="exp-overlay">
+            <h3>Sacred Culture</h3>
+            <p>Discover ancient relics, colossal rock temples, and historic ruins detailing 2500+ years of history.</p>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img src="images/leopards.jpeg" alt="Wild Leopard in Yala Park" class="exp-img" />
+          <div class="exp-overlay">
+            <h3>Raw Wildlife</h3>
+            <p>Embark on safari drives to spot wild elephants, sloth bears, peacock flocks, and the elusive Sri Lankan leopards.</p>
+          </div>
+        </div>
+        <div class="exp-card">
+          <img src="images/Beach.jpeg" alt="Pristine golden beach shore" class="exp-img" />
+          <div class="exp-overlay">
+            <h3>Coastal Beaches</h3>
+            <p>Unwind on gorgeous golden sand shores, swim in crystal clear waters, or surf world-class breaks along southern coasts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Explore Sri Lanka. All Rights Reserved.</p>
+      <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.5rem;">Carefully crafted for a premium travel experience.</p>
+    </footer>
+  </body>
+</html>

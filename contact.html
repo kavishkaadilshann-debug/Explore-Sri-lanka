@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Us - Explore Sri Lanka. Get in touch for custom travel plans, itineraries, phone support, or direct email inquiries." />
+    <title>Contact Us - Explore Sri Lanka</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Explore Sri Lanka</h1>
+      <div class="header-actions">
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav id="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="travel-tips.html">Travel Tips</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <h2>Contact Us</h2>
+      <p>Get in touch with our local tour guides for customized itineraries</p>
+    </section>
+
+    <main class="main-content">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: stretch; max-width: 1000px; margin: 0 auto;">
+        
+        <!-- Upgraded Contact Form -->
+        <form style="margin: 0; width: 100%; max-width: 100%;">
+          <h3 style="margin-bottom: 1.5rem; font-weight: 700;">📨 Send Us a Message</h3>
+          <div class="form-group" style="margin-bottom: 1.2rem;">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.2rem;">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.2rem;">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Write your message here (min. 10 characters)..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Contact Details Card -->
+        <div class="card" style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="margin-bottom: 1.5rem; font-weight: 700;">📞 Contact Information</h3>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.9rem; line-height: 1.6;">Have questions about bookings, custom driver guides, or wild safaris? Contact our Colombo headquarters team directly.</p>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.6rem; line-height: 1; color: var(--brand-secondary);">📍</span>
+                <div>
+                  <h4 style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.1rem;">Head Office Address</h4>
+                  <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
+                    Explore Sri Lanka Ltd.<br />
+                    Level 12, Galle Face Court 02,<br />
+                    Colombo 00300, Sri Lanka.
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.6rem; line-height: 1; color: var(--brand-secondary);">📞</span>
+                <div>
+                  <h4 style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.1rem;">Phone Numbers</h4>
+                  <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
+                    Hotline: <strong>+94 11 234 5678</strong><br />
+                    WhatsApp Support: <strong>+94 77 123 4567</strong>
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.6rem; line-height: 1; color: var(--brand-secondary);">✉️</span>
+                <div>
+                  <h4 style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.1rem;">Email Contacts</h4>
+                  <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
+                    General: <a href="mailto:hello@exploresrilanka.com" style="color: var(--brand-primary); text-decoration: none; font-weight: 600;">hello@exploresrilanka.com</a><br />
+                    Tours: <a href="mailto:support@exploresrilanka.lk" style="color: var(--brand-primary); text-decoration: none; font-weight: 600;">support@exploresrilanka.lk</a>
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <span style="font-size: 1.6rem; line-height: 1; color: var(--brand-secondary);">🕒</span>
+                <div>
+                  <h4 style="font-weight: 600; font-size: 0.95rem; margin-bottom: 0.1rem;">Business Hours</h4>
+                  <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
+                    Mon – Fri: 8:30 AM – 5:30 PM<br />
+                    Sat: 9:00 AM – 1:00 PM (Sunday Closed)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Explore Sri Lanka. All Rights Reserved.</p>
+      <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.5rem;">Carefully crafted for a premium travel experience.</p>
+    </footer>
+  </body>
+</html>

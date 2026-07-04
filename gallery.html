@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Visual Gallery - Explore beautiful photographs of Sri Lanka's wildlife, landscapes, temples, and beaches." />
+    <title>Gallery - Explore Sri Lanka</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Explore Sri Lanka</h1>
+      <div class="header-actions">
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav id="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="travel-tips.html">Travel Tips</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <h2>Visual Gallery</h2>
+      <p>Captured moments of wildlife and landscapes from paradise island</p>
+    </section>
+
+    <main class="main-content">
+      <!-- Gallery Category Filter Buttons -->
+      <div class="filters-container" style="margin-bottom: 3rem;">
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="nature">Nature & Landscapes</button>
+        <button class="filter-btn" data-filter="wildlife">Wildlife & Oceans</button>
+        <button class="filter-btn" data-filter="heritage">Heritage & Culture</button>
+      </div>
+
+      <section class="gallery">
+        <div class="gallery-item" data-category="heritage">
+          <img src="images/galle.jpeg" alt="Galle Fort Lighthouse" />
+          <div class="gallery-overlay">
+            <h4>Galle Fort Lighthouse</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/ella1.jpeg" alt="Scenic Ella Gap View" />
+          <div class="gallery-overlay">
+            <h4>Scenic Ella Gap View</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="images/elephant.jpg" alt="Baby Elephant Playing" />
+          <div class="gallery-overlay">
+            <h4>Baby Elephant Playing</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/waterfall.jpeg" alt="Bambarakanda Falls cascade" />
+          <div class="gallery-overlay">
+            <h4>Bambarakanda Falls cascade</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/heroo.jpeg" alt="Sunrise over the hills" />
+          <div class="gallery-overlay">
+            <h4>Sunrise over the hills</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="images/leopards.jpeg" alt="Leopard Resting in Yala" />
+          <div class="gallery-overlay">
+            <h4>Leopard Resting in Yala</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="images/peacock.jpg" alt="Wild Peacock Feather Display" />
+          <div class="gallery-overlay">
+            <h4>Wild Peacock Feather Display</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/tea.jpeg" alt="Lush Tea Plantations" />
+          <div class="gallery-overlay">
+            <h4>Lush Tea Plantations</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="images/Tusker.jpg" alt="Majestic Tusker Elephant walking" />
+          <div class="gallery-overlay">
+            <h4>Majestic Tusker Elephant walking</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="heritage">
+          <img src="images/anuradhapura.jpg" alt="Ruwanweliseya Sacred Stupa" />
+          <div class="gallery-overlay">
+            <h4>Ruwanweliseya Sacred Stupa</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="heritage">
+          <img src="images/munneswarem.jpeg" alt="Munneswaram Hindu Kovil" />
+          <div class="gallery-overlay">
+            <h4>Munneswaram Hindu Kovil</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="wildlife">
+          <img src="images/bluewhale.jpg" alt="Whale tail fluke ocean splash" />
+          <div class="gallery-overlay">
+            <h4>Whale tail fluke ocean splash</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="heritage">
+          <img src="images/sigiriya.jpeg" alt="Sigiriya Lion Rock Fortress aerial" />
+          <div class="gallery-overlay">
+            <h4>Sigiriya Lion Rock Fortress</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/ella.jpeg" alt="Scenic Ella Train Ride Nine Arch Bridge" />
+          <div class="gallery-overlay">
+            <h4>Nine Arch Bridge Railway</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="heritage">
+          <img src="images/kandy.jpeg" alt="Temple of the Sacred Tooth Relic Kandy lake front" />
+          <div class="gallery-overlay">
+            <h4>Temple of the Tooth Relic</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/trincomalee.jpeg" alt="Nilaveli beach shoreline Trincomalee" />
+          <div class="gallery-overlay">
+            <h4>Nilaveli Beach Shoreline</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="heritage">
+          <img src="images/jaffna.jpeg" alt="Nallur Hindu Kovil Temple Gopuram Jaffna" />
+          <div class="gallery-overlay">
+            <h4>Nallur Kovil Temple Gopuram</h4>
+          </div>
+        </div>
+
+        <!-- NEWLY ADDED ASSETS (Arugam bay, Colombo, Beach, Surf) -->
+        <div class="gallery-item" data-category="nature">
+          <img src="images/Arugam bay.jpeg" alt="Surfing Point at Arugam Bay" />
+          <div class="gallery-overlay">
+            <h4>Surfing Point at Arugam Bay</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="heritage">
+          <img src="images/colombo.jpeg" alt="Colombo Skyline and Beira Lake at Sunset" />
+          <div class="gallery-overlay">
+            <h4>Colombo City Sunset</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/Beach.jpeg" alt="Golden Sandy Tropical Beach Shoreline" />
+          <div class="gallery-overlay">
+            <h4>Pristine Sandy Beach</h4>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="images/Surf.jpeg" alt="Catching Point Break Waves in Sri Lanka" />
+          <div class="gallery-overlay">
+            <h4>Surfing Point Break</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Explore Sri Lanka. All Rights Reserved.</p>
+      <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.5rem;">Carefully crafted for a premium travel experience.</p>
+    </footer>
+  </body>
+</html>

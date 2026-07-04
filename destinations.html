@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Explore Sri Lanka's top destinations. From Sigiriya Lion Rock to Ella mountains, Arugam Bay surfing, and Colombo urban life." />
+    <title>Destinations - Explore Sri Lanka</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Explore Sri Lanka</h1>
+      <div class="header-actions">
+        <button
+          class="menu-toggle"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+        <nav id="nav-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="destinations.html" class="active">Destinations</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="travel-tips.html">Travel Tips</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-banner">
+      <h2>Top Destinations</h2>
+      <p>Breathtaking spots you must explore in your lifetime</p>
+    </section>
+
+    <main class="main-content">
+      <!-- Search and Filter Systems -->
+      <div class="search-filter-wrapper">
+        <div class="search-box">
+          <input type="text" id="dest-search" placeholder="Search destinations (e.g. surf, safari, city...)" />
+        </div>
+        <div class="filters-container">
+          <button class="filter-btn active" data-filter="all">All Locations</button>
+          <button class="filter-btn" data-filter="heritage">Heritage</button>
+          <button class="filter-btn" data-filter="nature">Nature & Hiking</button>
+          <button class="filter-btn" data-filter="coastal">Beaches & Coastal</button>
+          <button class="filter-btn" data-filter="culture">Culture & Life</button>
+        </div>
+      </div>
+
+      <section class="cards">
+        <div class="card" id="sigiriya" data-category="heritage">
+          <img src="images/sigiriya.jpeg" alt="Sigiriya Rock Fortress" />
+          <h3>Sigiriya</h3>
+          <p class="card-subtitle">Ancient Rock Fortress & UNESCO Site</p>
+          <p class="card-desc">
+            Sigiriya is an ancient rock fortress in Sri Lanka and a UNESCO World
+            Heritage Site. It is famous for its large rock, beautiful frescoes,
+            and ancient palace ruins built by King Kashyapa.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="ella" data-category="nature">
+          <img src="images/ella.jpeg" alt="Ella Hills Train Bridge" />
+          <h3>Ella</h3>
+          <p class="card-subtitle">Mist-Clad Mountains & Panoramic Treks</p>
+          <p class="card-desc">
+            Ella is a town in the central hills of Sri Lanka, known for its
+            stunning mountain views, tea plantations, and the famous Nine Arch
+            Bridge. It is popular for hiking and trekking.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="galle" data-category="coastal">
+          <img src="images/galle.jpeg" alt="Galle Fort Lighthouse" />
+          <h3>Galle</h3>
+          <p class="card-subtitle">Colonial Dutch Fort & Coastal Walls</p>
+          <p class="card-desc">
+            Galle is known for its historic Dutch colonial fort, a UNESCO World
+            Heritage Site. The fort area is filled with charming cobbled streets,
+            boutique galleries, and unique sea view cafes.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="kandy" data-category="culture">
+          <img src="images/kandy.jpeg" alt="Temple of the Tooth Relic, Kandy" />
+          <h3>Kandy</h3>
+          <p class="card-subtitle">Sacred Temple & Spiritual Heartland</p>
+          <p class="card-desc">
+            Kandy is known for its rich cultural heritage, vibrant local markets, and
+            the sacred Temple of the Tooth Relic, making it the focal hub of traditional
+            Sri Lankan culture.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="anuradhapura" data-category="heritage">
+          <img src="images/anuradhapura.jpg" alt="Ancient Stupa, Anuradhapura" />
+          <h3>Anuradhapura</h3>
+          <p class="card-subtitle">Sacred Ruins of an Ancient Kingdom</p>
+          <p class="card-desc">
+            Anuradhapura features well-preserved ruins of a massive ancient
+            civilization. It is a UNESCO World Heritage Site and home to many
+            colossal, sacred Buddhist stupas.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="trincomalee" data-category="coastal">
+          <img src="images/trincomalee.jpeg" alt="Nilaveli Beach, Trincomalee" />
+          <h3>Trincomalee</h3>
+          <p class="card-subtitle">Pristine White-Sand Beaches & Whales</p>
+          <p class="card-desc">
+            Trincomalee is a coastal city known for its beautiful white-sand
+            beaches, crystal clear whale-watching waters, and deep natural
+            harbor history.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="jaffna" data-category="culture">
+          <img src="images/jaffna.jpeg" alt="Nallur Kovil, Jaffna" />
+          <h3>Jaffna</h3>
+          <p class="card-subtitle">Northern Kovils & Distinct Heritage</p>
+          <p class="card-desc">
+            Jaffna is a cultural gem in Northern Sri Lanka, famous for its
+            majestic golden Kovils, historic fort walls, unique local lifestyle, and
+            delicious northern crab cuisine.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="yala" data-category="nature">
+          <img src="images/leopards.jpeg" alt="Leopard in Yala National Park" />
+          <h3>Yala National Park</h3>
+          <p class="card-subtitle">Raw Wildlife Sanctuary & Leopard Haven</p>
+          <p class="card-desc">
+            Yala National Park borders the Indian Ocean and hosts a beautiful range of ecosystems. Famed globally for its high density of leopards, Yala is the premier destination for safaris.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="munneswaram" data-category="heritage">
+          <img src="images/munneswarem.jpeg" alt="Munneswaram Kovil Temple" />
+          <h3>Munneswaram Temple</h3>
+          <p class="card-subtitle">Historic Hindu Kovil of Spiritual Unity</p>
+          <p class="card-desc">
+            Munneswaram Temple is a legendary, ancient Hindu temple complex dedicated to Lord Shiva. Famed for its towering gopuram design, it unites Hindu and Buddhist pilgrims.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <!-- NEW PLACES: Arugam Bay & Colombo -->
+        <div class="card" id="arugambay" data-category="coastal">
+          <img src="images/Arugam bay.jpeg" alt="Surfing at Arugam Bay" />
+          <h3>Arugam Bay</h3>
+          <p class="card-subtitle">World-Class Surf Point & Sandy Bays</p>
+          <p class="card-desc">
+            Arugam Bay is a world-renowned surf break on the southeastern coast. With its bohemian vibe, scenic lagoons, and perfect point breaks, it is the ultimate beach and surfing paradise.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+
+        <div class="card" id="colombo" data-category="culture">
+          <img src="images/colombo.jpeg" alt="Colombo City Skyscrapers and Lake" />
+          <h3>Colombo</h3>
+          <p class="card-subtitle">Vibrant Urban Capital & Colonial Streets</p>
+          <p class="card-desc">
+            Colombo is the bustling commercial capital, merging sleek high-rises with 19th-century British structures, bustling local bazaars in Pettah, and beautiful spiritual temples.
+          </p>
+          <button class="card-action-btn">Explore Details</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Explore Sri Lanka. All Rights Reserved.</p>
+      <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 0.5rem;">Carefully crafted for a premium travel experience.</p>
+    </footer>
+  </body>
+</html>
