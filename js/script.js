@@ -65,37 +65,26 @@ function subscribeNewsletter() {
    2. GLOBAL THEME CONTROLLER (LIGHT/DARK MODE)
    ========================================================================== */
 function initTheme() {
-    const headerActions = document.querySelector(".header-actions");
-    if (!headerActions) return;
-
-    let toggleBtn = document.querySelector(".theme-toggle");
-    if (!toggleBtn) {
-        toggleBtn = document.createElement("button");
-        toggleBtn.className = "theme-toggle";
-        toggleBtn.setAttribute("aria-label", "Toggle dark/light mode");
-        toggleBtn.innerHTML = "🌙";
-        headerActions.insertBefore(toggleBtn, headerActions.firstChild);
-    }
-
-    const savedTheme = localStorage.getItem("theme") || "light";
-    document.documentElement.setAttribute("data-theme", savedTheme);
-    updateThemeIcon(savedTheme);
-
-    toggleBtn.addEventListener("click", () => {
-        const currentTheme = document.documentElement.getAttribute("data-theme");
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
-        
-        document.documentElement.setAttribute("data-theme", newTheme);
-        localStorage.setItem("theme", newTheme);
-        updateThemeIcon(newTheme);
-    });
-}
-
-/* Update Theme icon representation */
-function updateThemeIcon(theme) {
-    const toggleBtn = document.querySelector(".theme-toggle");
-    if (toggleBtn) {
-        toggleBtn.innerHTML = theme === "dark" ? "☀️" : "🌙";
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+    
+    // Function to apply theme based on device settings
+    const applyTheme = (e) => {
+        if (e.matches) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+    };
+    
+    // Apply theme immediately on load
+    applyTheme(darkThemeMq);
+    
+    // Watch for system theme changes dynamically
+    if (darkThemeMq.addEventListener) {
+        darkThemeMq.addEventListener("change", applyTheme);
+    } else {
+        // Fallback for older browsers
+        darkThemeMq.addListener(applyTheme);
     }
 }
 
@@ -269,7 +258,7 @@ function initDestinationsModal() {
             title: "Anuradhapura ruins",
             tag: "Heritage & Culture",
             season: "January to April",
-            fee: "$30 USD",
+            fee: "Free Entry",
             desc: "Anuradhapura was the glorious capital of ancient Sri Lanka for over a millennium. Today it houses colossal white brick dome temples (stupas), ruined temples, sacred trees, and incredibly advanced irrigation systems.",
             activities: ["Pay respects at the Jaya Sri Maha Bodhi tree", "Marvel at the giant Ruwanweliseya Stupa dome", "See the beautifully detailed Twin Ponds (Kuttam Pokuna)", "Explore the Samadhi Buddha rock statue"]
         },
