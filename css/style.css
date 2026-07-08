@@ -118,28 +118,30 @@ header h1 {
   gap: 1.2rem;
 }
 
-.theme-toggle {
-  background: rgba(255, 255, 255, 0.1);
-  border: none;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+.hero-cta-btn {
+  display: inline-block;
+  padding: 0.9rem 2.2rem;
+  background: var(--brand-gradient);
   color: var(--text-light);
-  font-size: 1.2rem;
-  transition: background var(--anim-fast), transform var(--anim-fast);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.3);
+  transition: transform var(--anim-fast) var(--curve-smooth), box-shadow var(--anim-fast) var(--curve-smooth), background var(--anim-fast);
+  animation: fadeInUp 1s ease both 0.4s;
+  margin-top: 1rem;
 }
 
-.theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
+.hero-cta-btn:hover {
+  background: var(--brand-gradient-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 198, 255, 0.5);
+  color: var(--text-light);
 }
 
-.theme-toggle:active {
-  transform: scale(0.95);
+.hero-cta-btn:active {
+  transform: translateY(-1px);
 }
 
 .menu-toggle {
